@@ -2,12 +2,12 @@
 <h1>Editar Tweet</h1>
 <br>
 
-<%= render "form", tweet: @tweet %>
+<%= render "form", tweet: @tweet, class:"btn btn-primary" %>
 
 <br>
 
 <div>
-  <%= link_to "Show this tweet", @tweet %> |
-  <%= link_to "Back to tweets", tweets_path %>
+  <%= link_to "Mostrar este Tweet", @tweet, class:"btn btn-primary" %>
+  <%= link_to "Volver a los Tweets", tweets_path, class:"btn btn-primary" %>
 </div>
 </section>

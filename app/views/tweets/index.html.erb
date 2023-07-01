@@ -14,12 +14,12 @@
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
     <p>
-      <%= link_to "Mostrar Tweet", tweet %>
+      <%= link_to "Mostrar Tweet", tweet, class:"btn btn-primary" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "Nuevo Tweet", new_tweet_path %>
+<%= link_to "Nuevo Tweet", new_tweet_path, class:"btn btn-primary" %>
 
 <%=raw pagy_bootstrap_nav(@pagy)%>
 <br><br>
