@@ -4,9 +4,9 @@
 <%= render @tweet %>
 
 <div>
-  <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
-  <%= link_to "Back to tweets", tweets_path %>
-
-  <%= button_to "Destroy this tweet", @tweet, method: :delete %>
+  <%= link_to "Editar Tweet", edit_tweet_path(@tweet) %> |
+  <%= link_to "Volver a los tweets", tweets_path %>
+  <br><br>
+  <%= button_to "borrar tweet", @tweet, method: :delete %>
 </div>
 </section>
